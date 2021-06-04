@@ -1,8 +1,8 @@
 .PHONY: test
-test:
+test: fmt
 	opa test . -v
 
-run:
+run: fmt
 	opa run .
 
 fmt:
