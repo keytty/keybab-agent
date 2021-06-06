@@ -3,7 +3,9 @@ repos:
   rev: v1.4.0
   hooks:
   - id: opa-fmt
-  - id: opa-check
+  # this doesn't test against all the file so import packages being ignore at the moment, therefore commenting out for now
+  # waiting for this issue, https://github.com/anderseknert/pre-commit-opa/issues/3 to be resolved before uncommenting back
+  # - id: opa-check
   - id: opa-test
   # - id: conftest-test
   # - id: conftest-verify
